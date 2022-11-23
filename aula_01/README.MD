@@ -1,4 +1,4 @@
-# Na primeira aula famos sobre Linux: 
+# Na primeira aula falamos sobre Linux: 
 ## Comandos basicos, Kernel, diretorios
 
 Foi compartilhado um arquivo com alguns comandos para o pessoal ir tomando mais contexto do linux durante o off talk.
