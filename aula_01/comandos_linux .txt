@@ -1,0 +1,62 @@
+﻿cd ..cd  / -> navegar
+cd.. -> Voltar a raiz
+whereis -l -> mostrar caminho de algo ex: whereis -l apache
+ipconfig linux -> ip addr
+which -> mostra o local de um arquivo executavel EX: which ls ou wichi ip
+ps -aux OU ps-ef -> print da tela dos processos no gerenciador de tarefas
+top -> mostra o gerenciar de tarefas ao vivo. Apertando a tecla "barra de espaço" ele atualiza as informações. Para navegar usa shift + < ou >. Para matar um processo pode ser usado a letra K dentro da tela do top digite o PID do processo ENTER e depois o código da KILL o padrão é 15.
+htop -> apt-get install htop. A mesma coisa que o TOP porém melhorardo
+df -h -> informações do HD e partições. consumo de leitura etc...
+df -i -> verifica a % do consumo de inodes das suas partições
+netstat -atunp -> mostra as informações como portas, ip, protocolos e endereçamentos
+ps-ef | grep NOME_DO_PROCESSO -> filtra por nome. é como se fosse o localizar.
+chmod +x -> Mudar a permissão de um arquivo.
+touch -> Cria arquivos EX: touch gabriel.txt OU touch pagina.html
+cat -> print na tela o conteudo do arquivo EX: cat NOME_DO_ARQUIVO.txt.
+echo -> Joga informações dentro de um arquivo EX: echo texto123 > NOME_DO_ARQUIVO.txt que irá receber as informações.
+ls -lha -> mostra o que tem no diretorio e o tamanho dos arquivos. Dica ls --color=auto
+du -sh  -> Mostra o quanto está ocupando de espeço no seu HD todas as pastas do diretorio atual
+history -> mostra os ultimos 1000 comandos digitados
+find / -name NOME_DA_PROCURA -> Procura um arquivo dentro de todo seu disco
+pwd -> mostra o diretoria que vc está no momento.
+cat /etc/os-release -> Mostra qual a versão do linux que está usando no momento
+who i am -> Mostra quem é a maquina conectada ou/e os detalhes do usuario atual
+mkdir -> cria nova pasta
+cd ou mv -> copia ou recorta um arquivo de um lugar para outro ex: cp texto.txt /home/user/Nova/
+ip link show -> mostra informações sobre a conexão com a internet e nome da placa de rede
+ip link set -> habilitar/desabilitar uma placa de rede ex: ip link set NOME_DA_PLC_REDE down OU up
+mntui -> abre uma interface grafica para configurar as placas de rede
+passwd -> trocar do usuario atual logado no console
+type -> se o comando é do bash ou de fonte externa EX: type ls ou type ip
+dnf clean all -> limpa os pacotes não utilizados.
+export HISTTIMEFORMAT='%F %T ' -> add data e hora ao hystory
+/usr/lib/rabbitmq/lib - Caminho para ver a versão do rabbitMQ
+userdel -r NOME_DO_USUARIO --> deleta usuario
+last -x shutdown -> Mostra ultimo reboot da VM
+lsblk -> Mostra os discos e suas pardf -htições
+growpart /NOME_DO_DIRETORIO/NOME_DO_DIRETORIO -> Aumentar o tamanho de uma particição após aumentar o disco.
+yum update mongo*4.4.2 -> Atualizar apenas um app especifico no linux para uma versão especifica / 
+ncdu -x --> Trás a quantidade de arquivo dentro do / do linux em TOP DOWN com a quantidade em GB
+less ft-backend.log | grep "2021-10-04" > backend-04-10-2021.txt
+find . -name \*2020\*.log -delete -> 
+/usr/lib/rabbitmq/lib/rabbitmq_ -> arquivos . ez do rabbitmq
+ntsysv -> Configura serviços para inciar no linux caso o "APP" esteja como serviço
+docker exec -ti ID_DO_CONTAINER /bin/bash
+jcmd ID_PID GC.heap_dump /heapdump.bin -> Cria um arquivo com as informações da VM JAVA no / do linux.
+docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}" --> lista os containers
+tar zxvf --> descompacta um arquivo
+tar -cf NOME_DO_AQUIVO_FINAL.tar NOME_DO_ARQUIVO_A_SER_COMPACTADO
+cat */* NOME_DA_BUSCA -> Encontra onde possui o texto da busca
+systemctl list-units --type=service --> filtra os serviços por status (pode usar com pipe grep)
+
+
+
+limpa cache do swap --> echo 3 > /proc/sys/vm/drop_caches
+sysctl -w vm.drop_caches=3
+swapoff -a && swapon -a
+clear
+
+
+
+
+
